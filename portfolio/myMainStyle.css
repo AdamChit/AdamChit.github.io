@@ -1,0 +1,264 @@
+
+body {
+	background-color:#111; 
+}
+.navbar .navbar-nav {
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	list-style-type: none;
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+.navbar .navbar-nav  li {
+	float: left;
+	border-right:1px solid #bbb;
+}
+
+.navbar .navbar-nav  li:last-child {
+	border-right: none;
+}
+
+.navbar .navbar-nav  li a {
+	display: block;
+	color: white;
+	width:100px;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar .navbar-nav li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #901E1D;
+}
+#div1 {
+	background-color:blue;
+}
+#div2 {
+	background-color:red;
+
+}
+
+#div3 {
+	background-color:green;
+
+}
+
+.contentDiv {
+	height: 800px;
+}
+#topContainer {
+	background-image: url("images/University_of_Waterloo_William_G._Davis_Computer_Research_Center.jpg"); 
+	width: 100%;
+	background-size: cover;
+}
+.rw-wrapper{
+	color: white;
+	margin-top: 25%;
+	margin-left: 25%;
+	font-family: 'Bree Serif';
+	padding: 10px;
+}
+.rw-sentence{
+	color: white;
+	margin: 0;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.rw-sentence span{
+	color: #444;
+	font-size: 200%;
+	font-weight: normal;
+}
+.rw-words{
+	display: inline;
+	text-indent: 10px;
+}
+.rw-words-1 span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	color: white;
+	-webkit-animation: rotateWord 18s linear infinite 0s;
+	-ms-animation: rotateWord 18s linear infinite 0s;
+	animation: rotateWord 12s linear infinite 0s;
+}
+.rw-words-1 span:nth-child(2) { 
+	-webkit-animation-delay: 4s; 
+	-ms-animation-delay: 4s; 
+	animation-delay: 4s; 
+	color: white;
+}
+.rw-words-1 span:nth-child(3) { 
+	-webkit-animation-delay: 8s; 
+	-ms-animation-delay: 8s; 
+	animation-delay: 8s; 
+	color: white; 
+}
+.rw-words-1 span:nth-child(4) { 
+	-webkit-animation-delay: 12s; 
+	-ms-animation-delay: 12s; 
+	animation-delay: 12s; 
+	color: white;
+}
+
+@-webkit-keyframes rotateWord {
+	0% { opacity: 0; }
+	2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+	17% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+	0% { opacity: 0; }
+	2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+	17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes rotateWord {
+	0% { opacity: 0; }
+	2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+	17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@media screen and (max-width: 768px){
+	.rw-sentence { font-size: 18px; }
+}
+@media screen and (max-width: 320px){
+	.rw-sentence { font-size: 9px; }
+}
+.center {
+	text-align: center;
+	font-size: 225%;
+}
+#aboutContainer {
+	background-image: url("images/Toronto_Stock_Exchange_01.jpg");
+	width: 100%;
+	background-size: cover;
+}
+.me {
+	margin-top: 13%;
+	color: white;
+	text-align: center;
+	font-size: 225%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 10%;
+	padding: 25px;
+	border: 3px solid white;
+	border-radius: 30px
+}
+.sQ {
+	margin-top: 100px;
+}
+#contactContainer {
+	background-image:  url("images/sun.jpeg");
+	width: 100%;
+}
+.coffee {
+	font-size: 280%;
+	text-align: center;
+	font-family: 'Bree Serif';
+	color: white;
+}
+
+.touch {
+	font-size: 550%;
+	margin-top: 5%;
+	text-align: center;
+	font-family: 'Bree Serif';
+	color: white;
+} 
+.sQuote {
+	font-family: Zapf Chancery, cursive;
+	color: white;
+	font-weight: bold;
+	margin-top: 8%;
+	margin-right: 10%;
+	margin-left: 11%;
+}
+div.projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; /* or space-around */
+	margin-top: 1%;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+
+@media screen and (min-width: 50em) {
+	a {
+		width: calc(32%);
+
+	}
+}
+
+.col-md-4:hover img {
+	transform: scale(1.1);
+
+}
+
+.projects figure {
+	margin: 15px;
+	overflow: hidden;
+}
+
+
+.projects img {
+	border: none;
+	max-width: 100%;
+	height: 200px;
+	display: block;		
+	transition: transform .2s ease-in-out;
+}
+
+#projectsContainer {
+	background-image:  url("images/shop.jpg");
+	width: 100%;
+	background-size: cover;
+}
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.download {
+	position: relative;
+	width: 30%;
+	padding: 25px;
+	border: 3px solid white;
+	margin-top: 15%;
+	margin-bottom: 5%;
+	border-radius: 30px
+}
+.download h1 {
+	text-align: center;
+	color: white;
+}
+.top-buffer { 
+	margin-top:20px; 
+}
+.addpad {
+	border-radius: 30px;
+	border: 4px solid #901E1D;
+	padding: 20px;     
+}
+
